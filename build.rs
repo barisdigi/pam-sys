@@ -63,8 +63,8 @@ fn main() {
     }
 
     let bindings = builder
-        .clang_arg("-F/usr/include");
-        .clang_arg("-I/usr/include");
+        .clang_arg("-F/usr/include")
+        .clang_arg("-I/usr/include")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
